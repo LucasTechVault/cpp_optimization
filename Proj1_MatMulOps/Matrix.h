@@ -10,14 +10,14 @@ class Matrix {
 private:
     int rows;
     int cols;
-    float* data; // pointer holding memory
+    float* data; // points to where data will be at (e.g. 0x7ffef5)
 
 public:
 
     // Constructor
     Matrix(int r, int c); // allocates new float[r*c]
 
-    // Destructor
+    // Destructor - needed for managing raw resource
     ~Matrix();
 
     // Helper to print matrix
