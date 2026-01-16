@@ -21,7 +21,7 @@ public:
     ~Matrix();
 
     // Helper to print matrix
-    void print() const;
+    void print() const; // const - indicates print() will not modify any variables
 };
 
 #endif
